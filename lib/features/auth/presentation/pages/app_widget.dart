@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:ui_one/features/auth/presentation/pages/admin_page.dart';
+import 'package:ui_one/features/auth/presentation/pages/home.dart';
 import 'package:ui_one/features/auth/presentation/pages/landing_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/main_home.dart';
 import 'package:ui_one/features/auth/presentation/pages/intro_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/search_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/sign_in_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/sign_up_page.dart';
+import 'package:ui_one/features/auth/presentation/pages/model_page.dart';
 
 class AppWidget extends StatefulWidget {
   static Map<String, Object> loggedUser = {};
@@ -30,6 +32,8 @@ class _AppWidgetState extends State<AppWidget> {
         SearchScreen.id: (context) => const SearchScreen(),
         AdminPage.id: (context) => const AdminPage(),
         MyApp.id: (context) => const MyApp(),
+        ModelPage.id: (context) => const ModelPage(),
+        HomeScreen.id: (context) => const HomeScreen()
       },
     );
   }

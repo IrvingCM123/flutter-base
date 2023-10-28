@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_one/features/auth/presentation/pages/admin_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/main_home.dart';
 import 'package:ui_one/features/auth/presentation/pages/sign_up_page.dart';
+import 'package:ui_one/features/auth/presentation/pages/home.dart';
 import 'package:ui_one/features/auth/presentation/validator/auth_validator.dart';
 import '../../../../service/auth_service.dart';
 
@@ -210,7 +211,7 @@ class _SignInPageState extends State<SignInPage> {
 
       if (token != null) {
         // La autenticación fue exitosa, aquí puedes navegar a la página principal
-        Navigator.pushNamed(context, MyApp.id);
+        Navigator.pushNamed(context, HomeScreen.id);
       } else {
         // La autenticación falló, muestra un mensaje de error
         ScaffoldMessenger.of(context).showSnackBar(
