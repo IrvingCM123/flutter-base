@@ -4,6 +4,7 @@ import 'package:ui_one/features/auth/presentation/pages/home.dart';
 import 'package:ui_one/features/auth/presentation/pages/landing_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/main_home.dart';
 import 'package:ui_one/features/auth/presentation/pages/intro_page.dart';
+import 'package:ui_one/features/auth/presentation/pages/reentreno.dart';
 import 'package:ui_one/features/auth/presentation/pages/search_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/sign_in_page.dart';
 import 'package:ui_one/features/auth/presentation/pages/sign_up_page.dart';
@@ -33,7 +34,8 @@ class _AppWidgetState extends State<AppWidget> {
         AdminPage.id: (context) => const AdminPage(),
         MyApp.id: (context) => const MyApp(),
         ModelPage.id: (context) => const ModelPage(),
-        HomeScreen.id: (context) => const HomeScreen()
+        HomeScreen.id: (context) => const HomeScreen(),
+        Reentreno.id: (context) => const Reentreno()
       },
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_one/features/auth/presentation/pages/model_page.dart';
+import 'package:ui_one/features/auth/presentation/pages/reentreno.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String id = "home";
@@ -106,14 +107,14 @@ class GridViewButtons extends StatelessWidget {
       crossAxisCount: 1,
       children: <Widget>[
         CustomButton(
-          icon: Icons.medical_services,
+          icon: Icons.money,
           label: 'Model Prediction',
           data: ModelPage.id,
         ),
         CustomButton(
-          icon: Icons.emoji_emotions,
+          icon: Icons.lightbulb,
           label: 'Deep Learning',
-          data: ModelPage.id,
+          data: Reentreno.id,
         ),
         CustomButton(
           icon: Icons.history,
@@ -147,7 +148,7 @@ class CustomButton extends StatelessWidget {
             duration: Duration(milliseconds: 200),
             padding: EdgeInsets.all(45.0),
             decoration: BoxDecoration(
-              color: Color(0xFF6739FF),
+              color: Color.fromARGB(200, 211, 40, 17),
               borderRadius: BorderRadius.circular(9.0),
             ),
             child: Icon(

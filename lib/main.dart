@@ -5,9 +5,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'package:ui_one/service._locator.dart';
 
-Future <void> main() async {
-  await dotenv.load();
-
+void main() {
   setupLocator();
   runApp(const AppWidget());
 }
